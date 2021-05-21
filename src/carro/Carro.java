@@ -21,19 +21,19 @@ public class Carro extends CarSuper{
 		_p.rect(0, (3 * _p.height) / 4, _p.width, _p.height / 4);
 		
 		//rua
-		_p.fill(129, 125, 117);
+		_p.fill	(54,54,54);
 		_p.rect(0, (9 * _p.height) / 14, _p.width, _p.height / 8);
 		
 		//base do carro
 		_p.fill(169,169,169);
-		_p.rect(x, y + 10, s, di+(s/5), di+50);
+		_p.rect(x, y + 10-di, s, di+(s/5), di+50);
 		
 		//parabrisa
-		_p.triangle(x + 40, y + 10, x + 70, y + 10, x + 70, s + 40);
+		_p.triangle(x + 40-di, y + 10-di, x + 70+di, y + 10-di, x + 70+di, s + 40-di);
 
 		//teto
 		_p.fill(169,169,169);
-		_p.rect(x + 70, s + 40, di+50, di+30);
+		_p.rect(x + 70, s + 40-di, di+50, di+30);
 		
 		//rodas
 		//x, y, width, height

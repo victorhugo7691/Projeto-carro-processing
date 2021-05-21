@@ -18,8 +18,8 @@ public class AnimacaoDoCarro extends PApplet{
 	}
  
 	public void draw(){
-		Carro primeiroCarro = new Carro(this, 20, 1);
-		Carro segundoCarro = new Carro(this, 200, 1);
+		Carro primeiroCarro = new Carro(this, 20, 0);
+		Carro segundoCarro = new Carro(this, 200, 0);
 		background(30,144,255);
 		movimentarMontanha();
 		movimentarArvore();
