@@ -10,19 +10,19 @@ public class Rua extends CarSuper{
 		x1 = 0;
 	}
 
-	//increases x
+	//aumenta x
 	@Override
 	public void move(){
 		this.x1 += 10;
 	}
 
-	//knows how to draw itself
+	//renderizar
 	@Override
 	public void render(){
 		lines(this.x1);
 	}
 	
-	//creates row of many rectangles for street lines
+	//linhas da rua
 	public void lines(int x){
 		_p.fill(237, 208, 43);
 		for(int i = 0; i < 61; i++){
